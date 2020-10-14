@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+//componenete 'e uma funcao que retorna conteudo html
+import './styles/global.css'
+
+interface padrao{
+  text: string
+}
+
+
+function OlaMundo(arg: padrao){
+  return <h1>{arg.text}</h1>
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <OlaMundo text="foi 1"/>
+        <OlaMundo text="foi 2"/>
+        <OlaMundo text="Uhull"/>
+        <h1>TEste </h1>
     </div>
   );
 }
